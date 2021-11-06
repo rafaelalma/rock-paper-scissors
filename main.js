@@ -47,13 +47,13 @@ function game() {
     }
   }
 
-  function validatePlayerSelection(playerSelection) {
+  /* function validatePlayerSelection(playerSelection) {
     return (
       playerSelection === "rock" ||
       playerSelection === "paper" ||
       playerSelection === "scissors"
     );
-  }
+  } */
 
   let playerVictories = 0;
   let computerVictories = 0;
@@ -79,17 +79,16 @@ function game() {
 
   // TODO: while instead of for in order to avoid break keyword?
   for (let i = 0; i < NUMBER_OF_GAMES; i++) {
-    let playerSelection;
     let validPlayerSelection;
 
     // Keeps asking until the player selection is valid
-    do {
-      playerSelection = prompt(
+    /* do {
+      let playerSelection = prompt(
         "Choose Rock, Paper or Scissors: "
       ).toLowerCase();
 
       validPlayerSelection = validatePlayerSelection(playerSelection);
-    } while (!validPlayerSelection);
+    } while (!validPlayerSelection); */
 
     const computerSelection = computerPlay();
 
