@@ -10,10 +10,37 @@
   </head>
 
   <body>
-    <div class="container">
-      <button class="btn">Rock</button>
-      <button class="btn">Paper</button>
-      <button class="btn">Scissors</button>
+    <div class="page">
+      <div class="container-btns">
+        <button class="btn">Rock</button>
+        <button class="btn">Paper</button>
+        <button class="btn">Scissors</button>
+      </div>
+      <div class="container">
+        <div class="info">
+          Player selection: <strong id="player-selection"></strong>
+        </div>
+        <div class="info">
+          Computer selection: <strong id="computer-selection"></strong>
+        </div>
+      </div>
+      <div class="container-round">
+        <div class="round" id="round-message"></div>
+      </div>
+      <div class="container">
+        <div class="info">
+          Player victories: <strong id="player-victories">0</strong>
+        </div>
+        <div class="info">
+          Computer victories: <strong id="computer-victories">0</strong>
+        </div>
+      </div>
+      <div class="container-game">
+        <div class="game" id="game-message"></div>
+      </div>
+      <div class="container-restart">
+        <div class="info" id="restart-message"></div>
+      </div>
     </div>
   </body>
 </html>
