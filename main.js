@@ -19,7 +19,7 @@ let computerVictories = 0;
 const buttons = document.querySelectorAll(".btn");
 buttons.forEach((button) => {
   button.addEventListener("click", (event) => {
-    const playerSelection = event.target.textContent.toLowerCase();
+    const playerSelection = event.currentTarget.textContent.toLowerCase();
     const computerSelection = computerPlay();
 
     playerSelectionInfo.textContent = playerSelection.toUpperCase();
